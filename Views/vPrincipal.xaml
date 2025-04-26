@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jdelgadoT1.Views.vPrincipal"
+             Title="vPrincipal">
+    <ScrollView>
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label 
+            Text="TALLER SEMANA 1"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="15"/>
+        <Image
+            Source="https://redi.cedia.edu.ec/members/UISRAEL.png"
+            HeightRequest="150"/>
+        <Image
+            Source="uisrael.jpg"
+            HeightRequest="90"/>
+       
+        <Label
+            Text="FORMULARIO DE INSCRIPCIÓN"
+            FontSize="20"
+            TextColor="Red"
+            HorizontalOptions="Center"/>
+
+        <Entry
+            x:Name="txtIdentidicacion"
+            Placeholder="Ingrese la identificación"
+             Keyboard="Numeric"/>
+
+        <Entry
+            x:Name="txtaApellidos"
+            Placeholder="Ingrese sus Apellidos"/>
+        
+        <Entry
+            x:Name="txtNombre"
+            Placeholder="Ingrese sus Nombres"/>
+
+        <Entry
+            x:Name="txtTelefono"
+            Placeholder="Ingrese su teléfono"
+             Keyboard="Numeric"/>
+
+        <Entry
+             x:Name="txtCorreo"
+            Placeholder="Ingrese su Correo"/>
+
+        <Entry
+            x:Name="txtConCorreo"
+            Placeholder="Confirmar Correo"/>
+
+        <Button
+            x:Name="btnGuardar"
+            Text="Guardar"
+            Clicked="btnGuardar_Clicked"
+            
+            />
+
+        <Label
+            x:Name="lblInfo"
+            />
+
+
+    </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>
